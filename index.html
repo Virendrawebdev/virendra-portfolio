@@ -8,91 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="top">
-    <!-- Navbar -->
-    <div class="navbar" style="width: 100vw;">
-        <div class="brand">Virendra Chaudhari <br>Port-Folio</div>
-        <div style="display: flex; gap: 10px;">
-            <button class="btn" style="color: rgb(9, 9, 9); font-weight: bold;">WELCOME!</button>
-            <div class="hamburger" onclick="toggleContent()">
-                <span></span>
-                <span></span>
-                <span></span>
+<body>
+    <div id="main">
+        <div id="loader">
+            <div id="topheading">
+                <h5 class="reveal">Design portfolio</h5>
+                <h5 class="reveal">&copy; 2025</h5>
             </div>
+            <h1 class="reveal"><span style="color:sandybrown;">Virendra</span> <span>Chaudhari</span><span style="color: lightgreen;" >is</span><span style="color:lightgreen">a</span></h1>
         </div>
+        <div id="green"></div>
+        
     </div>
-
-    <!-- Collapsible Content -->
-    <div id="collapseContent" class="collapse">
-        <div class="menubar">
-            <a href="#about"><span>ABOUT</span></a>
-            <a href="#skills"><span>SKILLS</span></a>
-            <a href="#daily"><span>DAILY-WORK</span></a>
-            <a href="#projects"><span>PROJECT</span></a>
-            <a href="#contacts"><span>CONTACT</span></a>
-        </div>
-    </div>
-    <section class="hero">
-        <img src="image/virendra.jpg" alt="" style="width: 6rem; border-radius: 30%;">
-        <h2>Hi, I'm Virendra 👋</h2>
-        <p>I design and build modern, responsive websites with passion for clean code and great user experience.</p>
-        <button onclick="document.getElementById('daily').scrollIntoView({behavior:'smooth'})">View My
-            Daily-Work</button>
-    </section>
-    <!-- about page -->
-    <section id="about" class="about">
-        <h2>ABOUT</h2>
-        <p>My name is Virendra Chaudhari, I graduated in 2022 and I am passionate about web development. Currently,
-            I am building my skills in frontend and backend using the MERN stack. I also practice DSA regularly to
-            improve problem-solving. My goal is to work as a frontend as well as fullstack developer and contribute to
-            impactful
-            projects. </p>
-    </section>
-    <!-- skills page -->
-    <section id="skills" class="bgskills">
-        <h2>SKILLS</h2>
-        <div class="skills">
-            <div class="card">HTML5</div>
-            <div class="card">CSS3</div>
-            <div class="card">JavaScript</div>
-            <div class="card">React (Basics)</div>
-            <div class="card">Git & GitHub</div>
-            <div class="card">And Improve My Skills</div>
-        </div>
-    </section>
-    <!-- projects page -->
-    <section id="projects">
-        <h2>PROJECTS</h2>
-        <div class="projects">
-            <div class="card">
-                <img src="image/portfolio.png" alt="Project 1">
-                <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
-                <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-            </div>
-             <div class="card">
-                <img src="image/portfolio.png" alt="Project 1">
-                <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
-                <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-            </div>
-        </div>
-    </section>
-    <!-- contact page -->
-    <section id="contacts" class="contact">
-        <h2>CONTACT ME</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <!-- footer page -->
-    <footer>
-        <p>© 2025 Virendra Chaudhari</p>
-    </footer>
-    <!-- JavaScript -->
+    <!-- GSAP CDN LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
